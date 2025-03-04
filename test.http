@@ -1,0 +1,26 @@
+### Rekisteröi käyttäjä
+POST http://localhost:5074/api/user/register
+Content-Type: application/json
+
+{
+  "userName": "Paavo",
+  "password": "1234"
+}
+
+### Kirjaudu sisään
+POST http://localhost:5074/api/user/login
+Content-Type: application/json
+
+{
+  "userName": "Paavo",
+  "password": "1234"
+}
+
+### Tarkista kirjautumistila
+GET http://localhost:5074/api/user/isLoggedIn/paavo
+
+### Hae kaikki käyttäjät
+GET http://localhost:5074/api/user/all
+
+### Lukitse käyttäjä
+POST http://localhost:5074/api/user/lock/zahra
